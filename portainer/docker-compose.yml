@@ -13,6 +13,10 @@ services:
       - TZ=Pacific/Auckland
       - PUID=1000
       - PGID=1000
-    
+
 volumes:
   data:
+    driver_opts:
+      type: none
+      o: bind
+      device: /root/dockerapps/configs/portainer/data
