@@ -9,8 +9,8 @@ services:
       - TZ=Pacific/Auckland
       - DELUGE_LOGLEVEL=error #optional
     volumes:
-      - /path/to/deluge/config:/config
-      - /path/to/your/downloads:/downloads
+      - /root/dockerapps/configs/deluge:/config
+      - /path/to/your/downloads/deluge:/downloads
       - /var/run/docker.sock:/var/run/docker.sock
     ports:
       - 8112:8112
